@@ -17,9 +17,9 @@ connectDB();
 // ==========================================
 // SEARCH USER BY NAME OR EMAIL
 // ==========================================
-app.get("/admin/searchuser", async (req, res) => {
+app.post("/admin/searchuser", async (req, res) => {
     try {
-        const { search } = req.query;
+        const { search } = req.body;
 
         if (!search) {
             return res.status(400).json({
