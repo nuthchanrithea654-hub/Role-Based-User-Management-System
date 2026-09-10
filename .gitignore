@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Ignore JSON files
+*.json
+
+# Keep package.json and package-lock.json
+!package.json
+!package-lock.json
