@@ -140,7 +140,7 @@ app.use(
 
             const response = await axios({
                 method: req.method,
-                url: `http://localhost:5003${req.originalUrl}`,
+                url: `http://172.31.17.221:5003${req.originalUrl}`,
                 data: req.body,
                 headers: {
                     Authorization: req.headers.authorization
@@ -175,7 +175,7 @@ app.use(
 
             const response = await axios({
                 method: req.method,
-                url: `http://localhost:5004${req.originalUrl}`,
+                url: `http://172.31.21.20:5004${req.originalUrl}`,
                 data: req.body,
                 headers: {
                     Authorization: req.headers.authorization
